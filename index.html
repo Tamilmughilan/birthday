@@ -555,9 +555,9 @@
         <div class="start-screen" id="startScreen">
             <h1 class="title" id="mainTitle">🐼 Happy Birthday My Love! 💜</h1>
             <p class="subtitle">Our Journey Together...</p>
-            <button class="next-btn" onclick="startJourney()">Begin Our Story 💕</button>
+            <button class="next-btn" onclick="startJourney()">Our Story 💕</button>
             <p style="margin-top: 30px; font-size: 0.8em; color: rgba(255,255,255,0.4);">
-                Hint: This site has secrets... explore! 🔍
+                
             </p>
         </div>
 
@@ -574,39 +574,33 @@
             </div>
             <h2>To My Everything 💜</h2>
             <p>
-                Every moment with you has been a beautiful adventure. From our first hello to today, 
-                you've filled my life with joy, laughter, and endless love. You're my best friend, 
-                my partner in crime, and my favorite person in the whole world.
+                It's been a great journey with ups and downs and much more to come
             </p>
             <p>
-                Thank you for being you - for your kindness, your smile, and the way you make 
-                every ordinary day extraordinary. Here's to all the memories we've made and 
-                all the adventures yet to come!
+                Thankyou for being with me and I'll always be with you💜
             </p>
             <p style="font-size: 2em; margin-top: 30px;">
-                Happy Birthday, My Love! 🎂🎉💜
+                Happy Birthday,My Love! 🎂🎉💜
             </p>
             <p style="font-size: 1.5em; margin-top: 20px;">
-                I love you more than words can say 🐼💕
+                I love you sooo much Ammooooo🐼💕
             </p>
-            <p style="margin-top: 40px; font-size: 0.9em; color: rgba(255,255,255,0.5);">
-                P.S. - Press the space bar for a surprise! ✨
-            </p>
+            
         </div>
     </div>
 
     <script>
         const photos = [
-            { date: "Where It All Began - [Add Your Date]" },
-            { date: "Our First Adventure - [Add Your Date]" },
-            { date: "The Day We Laughed Until We Cried - [Add Your Date]" },
-            { date: "That Perfect Sunset - [Add Your Date]" },
-            { date: "Our Little Getaway - [Add Your Date]" },
-            { date: "Making Memories - [Add Your Date]" },
-            { date: "Just Us Being Us - [Add Your Date]" },
-            { date: "Another Beautiful Day - [Add Your Date]" },
-            { date: "Forever My Favorite - [Add Your Date]" },
-            { date: "And Many More To Come - [Add Your Date]" }
+            { date: "Where It All Began - 08/08/2022" },
+            { date: "Our First Drive - 08/03/2023" },
+            { date: "The Day We Expressed Ourself- 16/04/2023" },
+            { date: "Panda Icecream - 21/06/2022" },
+            { date: "That Look - 12/11/2022" },
+            { date: "Sunrise and Sand - 19/05/2024" },
+            { date: "Angel and Devil - 15/05/2025" },
+            { date: "Our Time - 16/11/2024" },
+            { date: "Those Hugs - 26/06/2025" },
+            { date: "And Many More To Come - 11/11/2025" }
         ];
 
         let currentPhoto = 0;
@@ -836,9 +830,9 @@
                 photoDiv.innerHTML = `
                     <div class="photo-card">
                         <div class="photo-placeholder">
-                            📸 [Add Your Photo Here]
+                            <img src="photo${currentPhoto + 1}.jpg" alt="Memory ${currentPhoto + 1}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
                             <br><br>
-                            Memory ${currentPhoto + 1}
+                        
                         </div>
                         <div class="photo-date">${photos[currentPhoto].date}</div>
                     </div>
@@ -858,7 +852,7 @@
                 } else {
                     const btn = document.createElement('button');
                     btn.className = 'next-btn';
-                    btn.textContent = 'See My Message 💌';
+                    btn.textContent = '💌';
                     btn.onclick = () => {
                         document.getElementById('finalCard').classList.add('show');
                         btn.style.display = 'none';
